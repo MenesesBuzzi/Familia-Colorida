@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Família Colorida",
+    "slug": "familia-colorida",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FFF7EC",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nunes.familiacolorida"
+    },
+    "android": {
+      "package": "com.nunes.familiacolorida",
+      "versionCode": 1,
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFC93C",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
