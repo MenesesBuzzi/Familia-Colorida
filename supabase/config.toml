@@ -1,0 +1,5 @@
+# Config mínima do Supabase CLI (usada para o deploy da Edge Function)
+project_id = "familia-colorida"
+
+[functions.narrador]
+verify_jwt = true

@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Família Colorida",
+    "slug": "familia-colorida",
+    "version": "3.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FFF7EC",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nunes.familiacolorida",
+      "buildNumber": "3",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ],
+        "NSMicrophoneUsageDescription": "O Família Colorida usa o microfone para o walkie-talkie da Rádio e as mensagens de voz do Chat."
+      }
+    },
+    "android": {
+      "package": "com.nunes.familiacolorida",
+      "versionCode": 3,
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFC93C",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-web-browser",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "O Família Colorida usa o microfone para o walkie-talkie da Rádio e as mensagens de voz do Chat.",
+          "recordAudioAndroid": true,
+          "enableBackgroundPlayback": true,
+          "enableBackgroundRecording": false
+        }
+      ]
+    ],
+    "scheme": "familiacolorida",
+    "extra": {
+      "eas": {
+        "projectId": "cf6af542-2d98-4c79-a028-988fb4f85d23"
+      }
+    }
+  }
+}
